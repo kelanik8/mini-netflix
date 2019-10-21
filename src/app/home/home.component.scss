@@ -1,0 +1,17 @@
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+    list-style-type: none;
+  }
+  
+  .auto-grid li.movie-card {
+    text-align: center;
+    font-size: 1.2rem;
+    // background: #eb4d4b;
+    color: #ffffff;
+  }
+  

@@ -1,18 +1,21 @@
 <li class="movie-card">
-  <div class="movie-img">
-    <!-- <img src="https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg" alt=""> -->
-  </div>
-  <div class="movie-content">
-    <h2>Interstellar</h2>
-    <div class="movie-category">
-      Adventure, Drama, Scifi
+  <a routerLink="movie/1">
+    <div class="movie-img" [ngStyle]="{'background-image': movieCard.background}">
+      <!-- <img src="https://i.ibb.co/FDGqCmM/papers-co-ag74-interstellar-wide-space-film-movie-art-33-iphone6-wallpaper.jpg" alt=""> -->
     </div>
-    <div class="movie-summary">
-      2017
+    <div class="movie-content">
+      <h2>{{ movieCard.title }}
+      </h2>
+      <div class="movie-category">
+        Animation, Comedy, Adventure
+      </div>
+      <div class="movie-summary">
+        {{ movieCard.year }}
+      </div>
+      <p class="movie-actors">Jason Sudeikis, Josh Gad, Bill Hader</p>
+      <button class="movie-watch-btn">
+        <i class="fas fa-play"></i> View Details
+      </button>
     </div>
-    <p class="movie-actors">Matthew McConaughey, Anne Hathaway, Jessica Chastain</p>
-    <button class="movie-watch-btn">
-      <i class="fas fa-play"></i> View Details
-    </button>
-  </div>
+  </a>
 </li>
